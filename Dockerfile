@@ -7,4 +7,6 @@ ADD ./scripts /scripts
 
 RUN chmod +x /scripts/init_squid_cache.sh /scripts/stop_squid_cache.sh
 
+RUN apt-get install -y wget
+
 CMD [ '/bin/bash' ]
